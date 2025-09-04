@@ -6,29 +6,103 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  
   <title>Frontend Mentor | Social links profile</title>
-
+  
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      margin-top: 10px;
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+    
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    body {
+      color: hsl(0, 0%, 100%);
+      font-size: 14px;
+      font-family: Inter;
+      background-color: hsl(0, 0%, 8%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    h1, h2, h3 {
+      margin: 10px;
+    }
+    .card {
+      background-color: hsl(0, 0%, 12%);
+      padding:32px; 
+      border-radius:20px;
+      text-align: center;
+    }
+    .avatar {
+      width:88px; 
+      height:88px; 
+      border-radius:50%; 
+      display:block; 
+      margin:0 auto 20px;
+    }
+    .location {
+      color: hsl(75, 94%, 57%);
+      font-weight: bold;
+    }
+    .bio {
+      margin: 20px 0px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: stretch;
+      margin-top: 10px;
+    }
+    .link {
+        background-color: hsl(0, 0%, 20%);
+        padding: 10px;
+        margin: 5px;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        color: hsl(0, 0%, 100%);
+        font-weight: bold;
+    }
+    .link:hover{ 
+      background: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 12%);
+    }
   </style>
 </head>
 <body>
+  <main class="card">
+    <img class="avatar" src="./assets/images/avatar-jessica.jpeg">
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
+    <h1>Jessica Randall</h1>
+    <div class="location">London, United Kingdom</div>
+    <p class="bio">"Front-end developer and avid reader."</p>
+    
+    <nav class="links">
+      <a class="link" href="#" target="_blank">GitHub</a>
+      <a class="link" href="#" target="_blank">Frontend Mentor</a>
+      <a class="link" href="#" target="_blank">LinkedIn</a>
+      <a class="link" href="#" target="_blank">Twitter</a>
+      <a class="link" href="#" target="_blank">Instagram</a>
+    </nav>
+  </main>
 
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Chiyek27</a>.
   </div>
 </body>
 </html>
